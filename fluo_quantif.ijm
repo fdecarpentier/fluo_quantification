@@ -1,5 +1,9 @@
 //Macro by Félix de Carpentier, 2022, CNRS - Sorbonne University - Paris-Saclay University (France) and UC Berkeley - HHMI (USA)
 
+// Before use, a configuration of the Bio-Formats is needed:
+// 1. Plugins > Bio-Formats > Bio-Formats Plugins Configuration
+// 2. Select your desired file format (e.g. “Nikon ND2”) and select “Windowless”
+
 setBatchMode(true);
 
 //Choose directories
