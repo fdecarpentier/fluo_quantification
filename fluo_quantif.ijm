@@ -1,4 +1,5 @@
 //Macro by Félix de Carpentier, 2022, CNRS - Sorbonne University - Paris-Saclay University (France) and UC Berkeley - HHMI (USA)
+//This macro allows the detection of cells and quatification of fluroescence levels of several channels of multiple stack.
 
 // Before use, a configuration of the Bio-Formats is needed:
 // 1. Plugins > Bio-Formats > Bio-Formats Plugins Configuration
