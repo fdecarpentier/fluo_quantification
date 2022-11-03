@@ -25,7 +25,7 @@ for(i=0; i<list.length; i++)
 	imgPath=inputFolder+list[i];
 	open(imgPath);
 	//Change LUT of a slice
-	//setLUT(list[i], 3, "Magenta");
+	setLUT(list[i], 2, "Yellow");
 	
 	//Set the min and max levels of the channels according to the values
 	setLevels(list[i], levelsArray); 
