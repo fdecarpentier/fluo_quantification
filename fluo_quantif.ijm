@@ -40,11 +40,17 @@ for(i=0; i<list.length; i++) {
 	run("Set Measurements...", "  redirect=None decimal=4");
 	run("Analyze Particles...", "size=10-Infinity add"); //exclude 
 	
+	//Create a ROI containing the background and add it to the ROI manager
+	//waitForUser("Pause"); 
+	//selectWindow(name+"-2");
+	run("Invert");
+	run("Analyze Particles...", "size=10-Infinity add composite");
+
 	//Transfer of the particles shape to the original stack
 	selectWindow(name);
 	run("Duplicate...", "duplicate channels=2-3"); //Duplicate suffix = "-1"
 	run("Gaussian Blur...", "sigma=2");
-	roiManager("Show All without labels");
+	roiManager("Show All");
 	roiManager("Set Color", "red"); 
 
 	//Measurement of grey values of mVenus and Chloro channels
@@ -83,5 +89,10 @@ run("Close");
 saveAs("results", output_path+ "results"+ ".csv"); 
 selectWindow("Results");
 run("Close"); 
+
+if (isOpen("ROI Manager")) {
+	selectWindow("ROI Manager");
+	run("Close");
+	}
 
 setBatchMode(false);
