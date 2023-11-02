@@ -14,7 +14,7 @@ list=getFileList(inputFolder);
 //General options
 setBatchMode(false);
 setOption("ExpandableArrays", true);
-levelsArray = newArray(610, 1220, 510, 750, 1200, 5500); //Set the desired levles values here. 
+levelsArray = newArray(610, 1220, 490, 750, 300, 5500); //Set the desired levels values here. 
 namesArray = newArray("Phase","YFP", "Chloro"); //Set the names of the channel here. 
 sliceDelArray = newArray("1"); //Contains the slices to remove from the composite, if none put nothing.
 

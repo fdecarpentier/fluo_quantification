@@ -1,6 +1,0 @@
-chan1_min : 610
-chan1_max : 1220
-chan2_min : 510
-chan2_max : 750
-chan3_min : 1200
-chan3_max : 5500
